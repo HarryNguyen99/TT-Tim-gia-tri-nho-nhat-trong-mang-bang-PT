@@ -4,7 +4,7 @@ public class TimGiaTriNhoNhatTrongMangBangPT {
     public static int minValue(int[] array) {
         int min = array[0];
         for (int j = 0; j < array.length; j++) {
-            if (array[j] > min) {
+            if (array[j] < min) {
                 min = array[j];
             }
         }
@@ -34,6 +34,6 @@ public class TimGiaTriNhoNhatTrongMangBangPT {
         for (int j = 0; j < arr.length; j++) {
             System.out.print(arr[j] + "\t");
         }
-        System.out.println("Giá trị lớn nhất trong danh sách là " + minValue(arr));
+        System.out.println("Giá trị nhỏ nhất trong danh sách là " + minValue(arr));
     }
 }
